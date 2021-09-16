@@ -10,39 +10,36 @@
 <body>
     <div class="container">
 
-        <header>
-            <h1>Calculator</h1>
-        </header>
-
         <section>
-            <div class="calc-screen"></div>
+            <div class="calc-screen"><p id="calc-screen-num">0</p></div>
             <div class="calc-btns">
                 <!--First Row-->
-                <div class="btns single-btn"><p>AC</p></div>
-                <div class="btns single-btn"><p>&#177;</p></div> <!--Percentage-->
-                <div class="btns single-btn"><p>&#37;</p></div> <!--Plus Minus-->
-                <div class="btns single-btn"><p>&#247;</p></div> <!--Divide-->
+                <div class="btns single-btn other-btns" onclick="keyPressed('1')"><p>AC</p></div>
+                <div class="btns single-btn other-btns" onclick="keyPressed('1')"><p>&#177;</p></div> <!--Percentage-->
+                <div class="btns single-btn other-btns" onclick="keyPressed('1')"><p>&#37;</p></div> <!--Plus Minus-->
+                <div class="btns single-btn func-btns" onclick="keyPressed('1')"><p>&#247;</p></div> <!--Divide-->
                 <!--First Row-->
-                <div class="btns single-btn"><p>7</p></div>
-                <div class="btns single-btn"><p>8</p></div>
-                <div class="btns single-btn"><p>9</p></div>
-                <div class="btns single-btn"><p>&#215;</p></div> <!--Multiply-->
+                <div class="btns single-btn num-btns" onclick="keyPressed('7')"><p>7</p></div>
+                <div class="btns single-btn num-btns" onclick="keyPressed('8')"><p>8</p></div>
+                <div class="btns single-btn num-btns" onclick="keyPressed('9')"><p>9</p></div>
+                <div class="btns single-btn func-btns" onclick="keyPressed('1')"><p>&#215;</p></div> <!--Multiply-->
                 <!--First Row-->
-                <div class="btns single-btn"><p>4</p></div>
-                <div class="btns single-btn"><p>5</p></div>
-                <div class="btns single-btn"><p>6</p></div>
-                <div class="btns single-btn"><p>&#8722;</p></div> <!--Minus-->
+                <div class="btns single-btn num-btns" onclick="keyPressed('4')"><p>4</p></div>
+                <div class="btns single-btn num-btns" onclick="keyPressed('5')"><p>5</p></div>
+                <div class="btns single-btn num-btns" onclick="keyPressed('6')"><p>6</p></div>
+                <div class="btns single-btn func-btns" onclick="keyPressed('1')"><p>&#8722;</p></div> <!--Minus-->
                 <!--First Row-->
-                <div class="btns single-btn"><p>1</p></div>
-                <div class="btns single-btn"><p>2</p></div>
-                <div class="btns single-btn"><p>3</p></div>
-                <div class="btns single-btn"><p>&#43;</p></div> <!--Plus-->
+                <div class="btns single-btn num-btns" onclick="keyPressed('1')"><p>1</p></div>
+                <div class="btns single-btn num-btns" onclick="keyPressed('2')"><p>2</p></div>
+                <div class="btns single-btn num-btns" onclick="keyPressed('3')"><p>3</p></div>
+                <div class="btns single-btn func-btns" onclick="keyPressed('1')"><p>&#43;</p></div> <!--Plus-->
                 <!--First Row-->
-                <div class="btns double-btn"><p>0</p></div>
-                <div class="btns single-btn"><p>.</p></div>
-                <div class="btns single-btn"><p>&#61;</p></div>
+                <div class="btns double-btn num-btns" onclick="keyPressed('0')"><p>0</p></div>
+                <div class="btns single-btn num-btns onclick="keyPressed('.')"><p>.</p></div>
+                <div class="btns single-btn func-btns onclick="keyPressed('1')"><p>&#61;</p></div> <!-- Equals-->
             </div>
         </section>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
